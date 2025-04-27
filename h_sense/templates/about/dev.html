@@ -1,0 +1,78 @@
+<!doctype html>
+{% load static %} 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>developers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #d5d9d9;">
+
+
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'hs.png' %}" alt="Logo" width="45" height="35" class="d-inline-block align-text-top">HealthSense</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/abouthsense/">About HealthSense</a></li>
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/contract/">Contact US</a></li>
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/developers/">Developers</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      News & Events
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">New News</a></li>
+                      <li><a class="dropdown-item" href="#">Upcomming Events</a></li>
+                      <li><a class="dropdown-item" href="#">News and Event</a></li>                    
+                    </ul>
+                  </li>
+                    <!-- <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/login/">Dashboard</a>
+                    </li> -->
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/login/">Login</a>
+                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/signup/">Signup</a>
+                    </li>
+            </ul>
+          </div>
+          
+            <a class="nav-link active" aria-current="page" href="https://bubt.edu.bd/">BUBT</a>
+          <img src="{% static 'bubt.png' %}" alt="Logo" width="45" height="35" class="d-inline-block align-text-top">
+        </div>
+      </nav>
+    <!-- Navbar End--> 
+     <br><br>
+     <div style="background-color: #adadad;"><br>
+     <h2 align="center">Developer of HealthSense</h2><br>
+     </div><br><br><br>
+
+     <div align="center">
+         <h3>Mahbubul Islam</h3>
+         <p>Student ID: 20234103099</p>
+         <p>Email:mahbubul2313@gmail.com
+     </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

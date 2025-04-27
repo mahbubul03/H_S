@@ -1,0 +1,177 @@
+<!doctype html>
+{% load static %} 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HealthSense|Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #d5d9d9;">
+
+
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'hs.png' %}" alt="Logo" width="45" height="35" class="d-inline-block align-text-top">HealthSense</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/abouthsense/">About HealthSense</a></li>
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/contract/">Contact US</a></li>
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/developers/">Developers</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      News & Events
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">New News</a></li>
+                      <li><a class="dropdown-item" href="#">Upcomming Events</a></li>
+                      <li><a class="dropdown-item" href="#">News and Event</a></li>                    
+                    </ul>
+                  </li>
+                    <!-- <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/login/">Dashboard</a>
+                    </li> -->
+                    <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/login/">Login</a>
+                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/signup/">Signup</a>
+                    </li>
+            </ul>
+          </div>
+          
+            <a class="nav-link active" aria-current="page" href="https://bubt.edu.bd/">BUBT</a>
+          <img src="{% static 'bubt.png' %}" alt="Logo" width="45" height="35" class="d-inline-block align-text-top">
+        </div>
+      </nav>
+    <!-- Navbar End--> 
+     <br><br>
+
+
+     <!-- Card Start-->
+    <div class="card-group">
+      <div class="card">
+        <img src="{% static '3.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Heart Rate</h5>
+          <p class="card-text">"Monitor your heart rate in real-time for better cardiovascular health. Stay informed about your heart's performance and detect any irregularities early."
+
+          </p>
+        </div>
+
+      </div>
+      <div class="card">
+        <img src="{% static 'pree1.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blood Pressure</h5>
+          <p class="card-text">"Track your blood pressure levels regularly. Get notified about any abnormal readings to manage your health proactively and avoid future complications."</p>
+        </div>
+
+      </div>
+      <div class="card">
+        <img src="{% static 'gmm.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Body Movement</h5>
+          <p class="card-text">"Keep an eye on your physical activity and movement. Whether it's daily steps or posture, this card helps you stay active and maintain a healthy lifestyle."</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- Card End-->
+
+
+    <!-- Carousel--> 
+    <!-- <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'gmm.png' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'pree1.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static '3.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <!--Carousel End  -->
+  
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+      <div class="container pt-5">
+          <div class="row g-5 pt-4">
+              <div class="col-lg-3 col-md-6">
+                  <h3 class="text-white mb-4">Quick Links</h3>
+                  <div class="d-flex flex-column justify-content-start">
+                      <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                      <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                      <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                  </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6">
+                  <h3 class="text-white mb-4">Get In Touch</h3>
+                  <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Mirpur,Dhaka</p>
+                  <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>mahbubul2313@gmail.com</p>
+                  <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+8801302304110</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h3 class="text-white mb-4">Follow Us</h3>
+                  <div class="d-flex">
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                      <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid text-light py-4" style="background: #051225;">
+      <div class="container">
+          <div class="row g-0">
+              <div class="col-md-6 text-center text-md-start">
+                  
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                  <p class="mb-0">Designed by Mahbubul Islam</p>
+                 <a class="text-primary" href="#">HealthSense</a>. All Rights Reserved.          
+                
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div> 
+  <!-- Footer End -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
